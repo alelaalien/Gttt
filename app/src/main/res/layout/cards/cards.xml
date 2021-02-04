@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvcolorseparador"-->
+<!--        android:layout_width="323dp"-->
+<!--        android:layout_height="9dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/carddocentecolor"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/carddocentecolor"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:layout_conversion_absoluteHeight="19dp"-->
+<!--        tools:layout_conversion_absoluteWidth="411dp" />-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/carddocentecolor"-->
+<!--        android:layout_width="326dp"-->
+<!--        android:layout_height="107dp"-->
+<!--        app:cardBackgroundColor="#D2F8F6F6"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvcolorseparador"-->
+<!--        tools:layout_conversion_absoluteHeight="154dp"-->
+<!--        tools:layout_conversion_absoluteWidth="382dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="323dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#EEF4F8F6"-->
+<!--            android:backgroundTint="#00C4E06E"-->
+<!--            tools:layout_conversion_absoluteHeight="124dp"-->
+<!--            tools:layout_conversion_absoluteWidth="362dp"-->
+<!--            tools:layout_editor_absoluteX="25dp"-->
+<!--            tools:layout_editor_absoluteY="59dp">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvnombrerv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView25"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="76dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvtelefonorv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView29"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvmateriadocenterv"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="76dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvemailrv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView33"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvtelefonorv"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="76dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvaliasrv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView31"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvnombrerv"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="76dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView25"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/sra"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="50dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView31"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/aliasdoc"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView25"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="45dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView32"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/matdoc_"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView31"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="78dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView33"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/emaildocc_"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView29"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="54dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView29"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/telefonodoc_"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView32"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="85dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvmateriadocenterv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="TextView"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView32"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvaliasrv"-->
+<!--                tools:layout_conversion_absoluteHeight="20dp"-->
+<!--                tools:layout_conversion_absoluteWidth="76dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tviddoc"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvidmateriacard"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:visibility="invisible"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

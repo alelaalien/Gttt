@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeacherActivity">
+
+
+
+    <TextView
+        android:id="@+id/idediciondoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:fontFamily="@font/habibi"
+        android:text="@string/nuevodocente"
+        android:textAlignment="center"
+        android:textColor="@color/colorGold"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:background="#A9FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idediciondoc"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/etnuevodocentenombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/nombrep"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etnuevodocentealias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/nickp"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etnuevodocentetelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/telefonop"
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etnuevodocenteemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/emailp"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etnuevodocenteapellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/apellidop"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Spinner
+            android:id="@+id/spinnernuevodocentemateria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tviddedicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/habibi"
+            android:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnaddst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorGray"
+                android:backgroundTint="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:text="@string/Agregar"
+                android:textColor="@color/colorGold"
+                android:textColorHint="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etast"
+                android:layout_width="261dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:fontFamily="@font/habibi"
+                android:hint="@string/dicta_"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnaddst"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvdicta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/habibi"
+                app:layout_constraintEnd_toEndOf="@+id/etast"
+                app:layout_constraintStart_toStartOf="@+id/etast"
+                app:layout_constraintTop_toBottomOf="@+id/etast" />
+
+            <Button
+                android:id="@+id/btnguardardocenteedicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/colorBlack"
+                android:fontFamily="@font/habibi"
+                android:hint="@string/guardar"
+                android:shadowColor="@color/colorGold"
+                android:text="@string/guardar"
+                android:textColor="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdicta" />
+
+            <Button
+                android:id="@+id/btncancelardocenteedicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:shadowColor="@color/colorGold"
+                android:text="@string/cancelar"
+                android:textColor="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnguardardocenteedicion" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

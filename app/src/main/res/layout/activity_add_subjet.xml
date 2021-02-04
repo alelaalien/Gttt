@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjetActivity">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#C9F3EEEE"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:fontFamily="@font/habibi"
+            android:text="@string/nuevamateria"
+            android:textAlignment="center"
+            android:textColor="@color/colorGold"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/etnombremateria"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/habibi"
+            android:hint="@string/nombrep"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spindia"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorDark"
+                android:fontFamily="@font/habibi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="50dp"
+                tools:layout_conversion_absoluteWidth="150dp" />
+
+            <Spinner
+                android:id="@+id/spincolor"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorDark"
+                android:fontFamily="@font/habibi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/spindia"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="53dp"
+                tools:layout_conversion_absoluteWidth="150dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ListView
+                android:id="@+id/listdias"
+                android:layout_width="241dp"
+                android:layout_height="158dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/btndls"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnendtime"
+                app:layout_constraintTop_toBottomOf="@+id/btnendtime" />
+
+            <Button
+                android:id="@+id/btnendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:text="@string/Fin_"
+                android:textColor="@color/colorGold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnstarttime" />
+
+            <EditText
+                android:id="@+id/etet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/habibi"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/btnstarttime"
+                app:layout_constraintTop_toBottomOf="@+id/etst" />
+
+            <Button
+                android:id="@+id/btnstarttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:text="@string/Inicio_"
+                android:textColor="@color/colorGold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:fontFamily="@font/habibi"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.887"
+                app:layout_constraintStart_toEndOf="@+id/btnstarttime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btndls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:text="@string/borrar"
+                android:textColor="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="@+id/etet"
+                app:layout_constraintHorizontal_bias="0.989"
+                app:layout_constraintStart_toEndOf="@+id/btnendtime"
+                app:layout_constraintTop_toBottomOf="@+id/etet" />
+
+            <Button
+                android:id="@+id/btncancelarmateria"
+                android:layout_width="0dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/colorGray"
+                android:fontFamily="@font/habibi"
+                android:text="@string/cancelar"
+                android:textAlignment="center"
+                android:textColor="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnas" />
+
+            <Button
+                android:id="@+id/btnas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorBlack"
+                android:backgroundTint="@color/colorBlack"
+                android:fontFamily="@font/habibi"
+                android:text="@string/guardar"
+                android:textAlignment="center"
+                android:textColor="@color/colorGold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/listdias" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
